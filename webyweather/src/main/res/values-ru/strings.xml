@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_me_menu">Я</string>
+    <string name="title_friends_menu">Друзья</string>
+    <string name="data_is_loading">Загрузка...</string>
+    <string name="data_is_loading_wait">Пожалуйста, подождите</string>
+
+    <string name="error_message">Произошла ошибка, пожалуйста, попробуйте позже</string>
+    <string name="no_connection">Интернет соединение отсутствует!</string>
+
+    <string name="prompt_email">Эл. почта</string>
+    <string name="prompt_password">Пароль</string>
+
+    <string name="action_sign_in_register"><b>Войти</b> или зарегистрироваться</string>
+    <string name="action_sign_in_short">Войти</string>
+
+    <string name="menu_forgot_password">Вспомнить пароль</string>
+
+    <string name="login_progress_signing_in">Вход&#8230;</string>
+
+    <string name="error_invalid_email">Электронная почта неверна!</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">Неверный пароль</string>
+    <string name="error_field_required">Обязательное поле</string>
+    <string name="loader_text">Загрузка...</string>
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+    <string name="service_lang">ru</string>
+    <string name="sign_in_with_google">With Google Account</string>
+</resources>
