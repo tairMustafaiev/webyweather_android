@@ -14,27 +14,27 @@ public class PropositionsData {
     @JsonProperty("weather")
     private Weather weather;
 
-    public List<Address> getAddress () {
+    public List<Address> getAddress() {
         return this.address;
     }
 
-    public void setAddress (List<Address> address) {
+    public void setAddress(List<Address> address) {
         this.address = address;
     }
 
-    public List<Propositions> getPropositions () {
+    public List<Propositions> getPropositions() {
         return this.propositions;
     }
 
-    public void setPropositions (List<Propositions> propositions) {
+    public void setPropositions(List<Propositions> propositions) {
         this.propositions = propositions;
     }
 
-    public Weather getWeather () {
+    public Weather getWeather() {
         return this.weather;
     }
 
-    public void setWeather (Weather weather) {
+    public void setWeather(Weather weather) {
         this.weather = weather;
     }
 }

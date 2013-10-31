@@ -46,139 +46,139 @@ public class Current {
 
     private String windspeedMiles;
 
-    public String getFeelsLikeC () {
+    public String getFeelsLikeC() {
         return this.feelsLikeC;
     }
 
-    public void setFeelsLikeC (String feelsLikeC) {
+    public void setFeelsLikeC(String feelsLikeC) {
         this.feelsLikeC = feelsLikeC;
     }
 
-    public String getFeelsLikeF () {
+    public String getFeelsLikeF() {
         return this.feelsLikeF;
     }
 
-    public void setFeelsLikeF (String feelsLikeF) {
+    public void setFeelsLikeF(String feelsLikeF) {
         this.feelsLikeF = feelsLikeF;
     }
 
-    public String getCloudcover () {
+    public String getCloudcover() {
         return this.cloudcover;
     }
 
-    public void setCloudcover (String cloudcover) {
+    public void setCloudcover(String cloudcover) {
         this.cloudcover = cloudcover;
     }
 
-    public String getHumidity () {
+    public String getHumidity() {
         return this.humidity;
     }
 
-    public void setHumidity (String humidity) {
+    public void setHumidity(String humidity) {
         this.humidity = humidity;
     }
 
-    public String getObservationTime () {
+    public String getObservationTime() {
         return this.observationTime;
     }
 
-    public void setObservationTime (String observationTime) {
+    public void setObservationTime(String observationTime) {
         this.observationTime = observationTime;
     }
 
-    public String getPrecipMM () {
+    public String getPrecipMM() {
         return this.precipMM;
     }
 
-    public void setPrecipMM (String precipMM) {
+    public void setPrecipMM(String precipMM) {
         this.precipMM = precipMM;
     }
 
-    public String getPressure () {
+    public String getPressure() {
         return this.pressure;
     }
 
-    public void setPressure (String pressure) {
+    public void setPressure(String pressure) {
         this.pressure = pressure;
     }
 
-    public String getTemp_C () {
+    public String getTemp_C() {
         return this.temp_C;
     }
 
-    public void setTemp_C (String temp_C) {
+    public void setTemp_C(String temp_C) {
         this.temp_C = temp_C;
     }
 
-    public String getTemp_F () {
+    public String getTemp_F() {
         return this.temp_F;
     }
 
-    public void setTemp_F (String temp_F) {
+    public void setTemp_F(String temp_F) {
         this.temp_F = temp_F;
     }
 
-    public String getVisibility () {
+    public String getVisibility() {
         return this.visibility;
     }
 
-    public void setVisibility (String visibility) {
+    public void setVisibility(String visibility) {
         this.visibility = visibility;
     }
 
-    public String getWeatherCode () {
+    public String getWeatherCode() {
         return this.weatherCode;
     }
 
-    public void setWeatherCode (String weatherCode) {
+    public void setWeatherCode(String weatherCode) {
         this.weatherCode = weatherCode;
     }
 
-    public List<WeatherDesc> getWeatherDesc () {
+    public List<WeatherDesc> getWeatherDesc() {
         return this.weatherDesc;
     }
 
-    public void setWeatherDesc (List<WeatherDesc> weatherDesc) {
+    public void setWeatherDesc(List<WeatherDesc> weatherDesc) {
         this.weatherDesc = weatherDesc;
     }
 
-    public List<WeatherIconUrl> getWeatherIconUrl () {
+    public List<WeatherIconUrl> getWeatherIconUrl() {
         return this.weatherIconUrl;
     }
 
-    public void setWeatherIconUrl (List<WeatherIconUrl> weatherIconUrl) {
+    public void setWeatherIconUrl(List<WeatherIconUrl> weatherIconUrl) {
         this.weatherIconUrl = weatherIconUrl;
     }
 
-    public String getWinddir16Point () {
+    public String getWinddir16Point() {
         return this.winddir16Point;
     }
 
-    public void setWinddir16Point (String winddir16Point) {
+    public void setWinddir16Point(String winddir16Point) {
         this.winddir16Point = winddir16Point;
     }
 
-    public String getWinddirDegree () {
+    public String getWinddirDegree() {
         return this.winddirDegree;
     }
 
-    public void setWinddirDegree (String winddirDegree) {
+    public void setWinddirDegree(String winddirDegree) {
         this.winddirDegree = winddirDegree;
     }
 
-    public String getWindspeedKmph () {
+    public String getWindspeedKmph() {
         return this.windspeedKmph;
     }
 
-    public void setWindspeedKmph (String windspeedKmph) {
+    public void setWindspeedKmph(String windspeedKmph) {
         this.windspeedKmph = windspeedKmph;
     }
 
-    public String getWindspeedMiles () {
+    public String getWindspeedMiles() {
         return this.windspeedMiles;
     }
 
-    public void setWindspeedMiles (String windspeedMiles) {
+    public void setWindspeedMiles(String windspeedMiles) {
         this.windspeedMiles = windspeedMiles;
     }
 }

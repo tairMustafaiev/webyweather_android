@@ -13,7 +13,7 @@ public class ConnectionManager {
      * @param context - {@link android.content.Context}
      * @return boolean is network connected
      */
-    public boolean isNetworkConnected (final Context context) {
+    public boolean isNetworkConnected(final Context context) {
         final ConnectivityManager conMgr = (ConnectivityManager) context
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         final NetworkInfo mNetworkInfo = conMgr.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);

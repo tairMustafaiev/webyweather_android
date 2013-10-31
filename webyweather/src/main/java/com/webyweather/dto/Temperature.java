@@ -5,11 +5,11 @@ public class Temperature {
 
     private String celsium;
 
-    public String getCelsium () {
+    public String getCelsium() {
         return this.celsium;
     }
 
-    public void setCelsium (String celsium) {
+    public void setCelsium(String celsium) {
         this.celsium = celsium;
     }
 }

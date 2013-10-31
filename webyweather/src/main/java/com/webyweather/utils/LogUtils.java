@@ -49,7 +49,7 @@ public class LogUtils {
      * Enable debug logging for unit tests.
      */
     //@VisibleForTesting
-    static void setDebugLoggingEnabledForTests (boolean enabled) {
+    static void setDebugLoggingEnabledForTests(boolean enabled) {
         sDebugLoggingEnabledForTests = Boolean.valueOf(enabled);
     }
 
@@ -57,14 +57,14 @@ public class LogUtils {
      * Returns true if the build configuration prevents debug logging.
      */
     //@VisibleForTesting
-    public static boolean buildPreventsDebugLogging () {
+    public static boolean buildPreventsDebugLogging() {
         return MAX_ENABLED_LOG_LEVEL > VERBOSE;
     }
 
     /**
      * Returns a boolean indicating whether debug logging is enabled.
      */
-    protected static boolean isDebugLoggingEnabled (String tag) {
+    protected static boolean isDebugLoggingEnabled(String tag) {
         if (buildPreventsDebugLogging()) {
             return false;
         }
@@ -77,7 +77,7 @@ public class LogUtils {
     /**
      * Checks to see whether or not a log for the specified tag is loggable at the specified level.
      */
-    public static boolean isLoggable (String tag, int level) {
+    public static boolean isLoggable(String tag, int level) {
         if (MAX_ENABLED_LOG_LEVEL > level) {
             return false;
         }
@@ -94,7 +94,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int v (String tag, String format, Object... args) {
+    public static int v(String tag, String format, Object... args) {
         if (isLoggable(tag, VERBOSE)) {
             return Log.v(tag, String.format(format, args));
         }
@@ -112,7 +112,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int v (String tag, Throwable tr, String format, Object... args) {
+    public static int v(String tag, Throwable tr, String format, Object... args) {
         if (isLoggable(tag, VERBOSE)) {
             return Log.v(tag, String.format(format, args), tr);
         }
@@ -129,7 +129,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int d (String tag, String format, Object... args) {
+    public static int d(String tag, String format, Object... args) {
         if (isLoggable(tag, DEBUG)) {
             return Log.d(tag, String.format(format, args));
         }
@@ -147,7 +147,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int d (String tag, Throwable tr, String format, Object... args) {
+    public static int d(String tag, Throwable tr, String format, Object... args) {
         if (isLoggable(tag, DEBUG)) {
             return Log.d(tag, String.format(format, args), tr);
         }
@@ -164,7 +164,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int i (String tag, String format, Object... args) {
+    public static int i(String tag, String format, Object... args) {
         if (isLoggable(tag, INFO)) {
             return Log.i(tag, String.format(format, args));
         }
@@ -182,7 +182,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int i (String tag, Throwable tr, String format, Object... args) {
+    public static int i(String tag, Throwable tr, String format, Object... args) {
         if (isLoggable(tag, INFO)) {
             return Log.i(tag, String.format(format, args), tr);
         }
@@ -199,7 +199,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int w (String tag, String format, Object... args) {
+    public static int w(String tag, String format, Object... args) {
         if (isLoggable(tag, WARN)) {
             return Log.w(tag, String.format(format, args));
         }
@@ -217,7 +217,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int w (String tag, Throwable tr, String format, Object... args) {
+    public static int w(String tag, Throwable tr, String format, Object... args) {
         if (isLoggable(tag, WARN)) {
             return Log.w(tag, String.format(format, args), tr);
         }
@@ -234,7 +234,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int e (String tag, String format, Object... args) {
+    public static int e(String tag, String format, Object... args) {
         if (isLoggable(tag, ERROR)) {
             return Log.e(tag, String.format(format, args));
         }
@@ -252,7 +252,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int e (String tag, Throwable tr, String format, Object... args) {
+    public static int e(String tag, Throwable tr, String format, Object... args) {
         if (isLoggable(tag, ERROR)) {
             return Log.e(tag, String.format(format, args), tr);
         }
@@ -273,7 +273,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int wtf (String tag, String format, Object... args) {
+    public static int wtf(String tag, String format, Object... args) {
         return Log.wtf(tag, String.format(format, args), new Error());
     }
 
@@ -292,7 +292,7 @@ public class LogUtils {
      *               more arguments than required by {@code format},
      *               additional arguments are ignored.
      */
-    public static int wtf (String tag, Throwable tr, String format, Object... args) {
+    public static int wtf(String tag, Throwable tr, String format, Object... args) {
         return Log.wtf(tag, String.format(format, args), tr);
     }
 
@@ -305,7 +305,7 @@ public class LogUtils {
      * (4 digit zone value can't be preceded by "GMT")
      * We got a report saying eBay sends a date in this format
      */
-    public static String cleanUpMimeDate (String date) {
+    public static String cleanUpMimeDate(String date) {
         if (TextUtils.isEmpty(date)) {
             return date;
         }
@@ -314,11 +314,11 @@ public class LogUtils {
     }
 
 
-    public static String byteToHex (int b) {
+    public static String byteToHex(int b) {
         return byteToHex(new StringBuilder(), b).toString();
     }
 
-    public static StringBuilder byteToHex (StringBuilder sb, int b) {
+    public static StringBuilder byteToHex(StringBuilder sb, int b) {
         b &= 0xFF;
         sb.append("0123456789ABCDEF".charAt(b >> 4));
         sb.append("0123456789ABCDEF".charAt(b & 0xF));

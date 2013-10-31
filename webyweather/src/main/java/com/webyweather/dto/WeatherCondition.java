@@ -11,35 +11,35 @@ public class WeatherCondition {
 
     private String nightIcon;
 
-    public String getCode () {
+    public String getCode() {
         return this.code;
     }
 
-    public void setCode (String code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
-    public String getDayIcon () {
+    public String getDayIcon() {
         return this.dayIcon;
     }
 
-    public void setDayIcon (String dayIcon) {
+    public void setDayIcon(String dayIcon) {
         this.dayIcon = dayIcon;
     }
 
-    public String getDescription () {
+    public String getDescription() {
         return this.description;
     }
 
-    public void setDescription (String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    public String getNightIcon () {
+    public String getNightIcon() {
         return this.nightIcon;
     }
 
-    public void setNightIcon (String nightIcon) {
+    public void setNightIcon(String nightIcon) {
         this.nightIcon = nightIcon;
     }
 }

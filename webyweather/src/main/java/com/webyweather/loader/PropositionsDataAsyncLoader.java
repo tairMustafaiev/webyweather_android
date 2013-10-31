@@ -34,7 +34,7 @@ public class PropositionsDataAsyncLoader extends AsyncTaskLoader<PropositionsDat
 
     private Context mContext;
 
-    public PropositionsDataAsyncLoader (Context context, double lat, double lng) {
+    public PropositionsDataAsyncLoader(Context context, double lat, double lng) {
         super(context);
         mContext = context;
         mLatitude = lat;
@@ -42,7 +42,7 @@ public class PropositionsDataAsyncLoader extends AsyncTaskLoader<PropositionsDat
     }
 
     @Override
-    public PropositionsData loadInBackground () {
+    public PropositionsData loadInBackground() {
         HttpManager httpManager = new HttpManager();
         final Header header = new BasicHeader("Content-Type", "application/json");
         String url = String.format(Constants.WEBYWEATHER_SERVICE_URL_TEMPLATE, mLatitude, mLongitude, mContext.getResources().getString(R.string.service_lang)); // TODO Fix "en" value in future for multilanguage support
@@ -63,18 +63,18 @@ public class PropositionsDataAsyncLoader extends AsyncTaskLoader<PropositionsDat
     }
 
     @Override
-    protected void onStopLoading () {
+    protected void onStopLoading() {
         cancelLoad();
     }
 
     @Override
-    protected void onReset () {
+    protected void onReset() {
         super.onReset();
         this.onStopLoading();
     }
 
     @Override
-    public void deliverResult (final PropositionsData data) {
+    public void deliverResult(final PropositionsData data) {
         this.mPropositionsData = data;
         if (isStarted()) {
             super.deliverResult(data);
@@ -82,7 +82,7 @@ public class PropositionsDataAsyncLoader extends AsyncTaskLoader<PropositionsDat
     }
 
     @Override
-    protected void onStartLoading () {
+    protected void onStartLoading() {
         if (this.mPropositionsData != null) {
             this.deliverResult(this.mPropositionsData);
         }

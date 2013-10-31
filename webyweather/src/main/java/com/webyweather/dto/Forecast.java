@@ -19,59 +19,59 @@ public class Forecast {
 
     private String mintempF;
 
-    public List<Astronomy> getAstronomy () {
+    public List<Astronomy> getAstronomy() {
         return this.astronomy;
     }
 
-    public void setAstronomy (List<Astronomy> astronomy) {
+    public void setAstronomy(List<Astronomy> astronomy) {
         this.astronomy = astronomy;
     }
 
-    public String getDate () {
+    public String getDate() {
         return this.date;
     }
 
-    public void setDate (String date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public List getHourly () {
+    public List getHourly() {
         return this.hourly;
     }
 
-    public void setHourly (List hourly) {
+    public void setHourly(List hourly) {
         this.hourly = hourly;
     }
 
-    public String getMaxtempC () {
+    public String getMaxtempC() {
         return this.maxtempC;
     }
 
-    public void setMaxtempC (String maxtempC) {
+    public void setMaxtempC(String maxtempC) {
         this.maxtempC = maxtempC;
     }
 
-    public String getMaxtempF () {
+    public String getMaxtempF() {
         return this.maxtempF;
     }
 
-    public void setMaxtempF (String maxtempF) {
+    public void setMaxtempF(String maxtempF) {
         this.maxtempF = maxtempF;
     }
 
-    public String getMintempC () {
+    public String getMintempC() {
         return this.mintempC;
     }
 
-    public void setMintempC (String mintempC) {
+    public void setMintempC(String mintempC) {
         this.mintempC = mintempC;
     }
 
-    public String getMintempF () {
+    public String getMintempF() {
         return this.mintempF;
     }
 
-    public void setMintempF (String mintempF) {
+    public void setMintempF(String mintempF) {
         this.mintempF = mintempF;
     }
 }

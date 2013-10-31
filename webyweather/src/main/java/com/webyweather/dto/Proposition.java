@@ -26,83 +26,83 @@ public class Proposition {
 
     private String updated;
 
-    public String getComments () {
+    public String getComments() {
         return this.comments;
     }
 
-    public void setComments (String comments) {
+    public void setComments(String comments) {
         this.comments = comments;
     }
 
-    public String getCreated () {
+    public String getCreated() {
         return this.created;
     }
 
-    public void setCreated (String created) {
+    public void setCreated(String created) {
         this.created = created;
     }
 
-    public String isDefault () {
+    public String isDefault() {
         return isDefault;
     }
 
-    public void setDefault (String aDefault) {
+    public void setDefault(String aDefault) {
         isDefault = aDefault;
     }
 
-    public String getId () {
+    public String getId() {
         return this.id;
     }
 
-    public void setId (String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getImage () {
+    public String getImage() {
         return this.image;
     }
 
-    public void setImage (String image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
-    public String getImage_thumb () {
+    public String getImage_thumb() {
         return this.image_thumb;
     }
 
-    public void setImage_thumb (String image_thumb) {
+    public void setImage_thumb(String image_thumb) {
         this.image_thumb = image_thumb;
     }
 
-    public String getRate () {
+    public String getRate() {
         return this.rate;
     }
 
-    public void setRate (String rate) {
+    public void setRate(String rate) {
         this.rate = rate;
     }
 
-    public String getTitle () {
+    public String getTitle() {
         return this.title;
     }
 
-    public void setTitle (String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getType () {
+    public String getType() {
         return this.type;
     }
 
-    public void setType (String type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public String getUpdated () {
+    public String getUpdated() {
         return this.updated;
     }
 
-    public void setUpdated (String updated) {
+    public void setUpdated(String updated) {
         this.updated = updated;
     }
 }

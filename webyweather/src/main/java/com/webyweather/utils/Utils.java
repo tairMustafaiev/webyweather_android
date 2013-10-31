@@ -10,7 +10,7 @@ public class Utils {
 
     public static final String VIEW_DEBUGGING_TAG = "AlarmClock";
 
-    public static void checkRequestLayout (View v) {
+    public static void checkRequestLayout(View v) {
         boolean inLayout = false;
         final View root = v.getRootView();
 
@@ -36,7 +36,7 @@ public class Utils {
      * @param context - {@link android.content.Context}
      * @return {@link android.app.ProgressDialog}
      */
-    public static ProgressDialog initProgressDialog (final Context context) {
+    public static ProgressDialog initProgressDialog(final Context context) {
         final ProgressDialog dialog = new ProgressDialog(context, R.style.Widget_AppCompat_ProgressBar);
         dialog.setTitle(context.getText(R.string.data_is_loading_wait));
         dialog.setMessage(context.getText(R.string.data_is_loading));

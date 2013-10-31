@@ -9,27 +9,27 @@ public class Propositions {
 
     private WeatherCondition weathercondition;
 
-    public Proposition getProposition () {
+    public Proposition getProposition() {
         return this.proposition;
     }
 
-    public void setProposition (Proposition proposition) {
+    public void setProposition(Proposition proposition) {
         this.proposition = proposition;
     }
 
-    public Temperature getTemperature () {
+    public Temperature getTemperature() {
         return this.temperature;
     }
 
-    public void setTemperature (Temperature temperature) {
+    public void setTemperature(Temperature temperature) {
         this.temperature = temperature;
     }
 
-    public WeatherCondition getWeathercondition () {
+    public WeatherCondition getWeathercondition() {
         return this.weathercondition;
     }
 
-    public void setWeathercondition (WeatherCondition weathercondition) {
+    public void setWeathercondition(WeatherCondition weathercondition) {
         this.weathercondition = weathercondition;
     }
 }

@@ -45,7 +45,7 @@ public class HttpManager {
      * @throws org.apache.http.client.ClientProtocolException
      * @throws java.io.IOException
      */
-    public HttpResponse doGet (final String url, final Header... headers)
+    public HttpResponse doGet(final String url, final Header... headers)
             throws ClientProtocolException, IOException {
         final HttpParams params = this.getHttpParams();
         final HttpClient httpclient = new DefaultHttpClient(params);
@@ -59,8 +59,8 @@ public class HttpManager {
         return null;
     }
 
-    public HttpResponse doRepeatableGet (final String url, final int retryCount,
-                                         final Header... headers) {
+    public HttpResponse doRepeatableGet(final String url, final int retryCount,
+                                        final Header... headers) {
         HttpResponse response = null;
         for (int i = 0; i < retryCount; i++) {
             Log.i(HttpManager.TAG, (i + 1) + " attempt to execute GET request...");
@@ -91,8 +91,8 @@ public class HttpManager {
      * @param headers - {@link org.apache.http.Header} request headers
      * @return {@link org.apache.http.HttpResponse} response object
      */
-    public HttpResponse doPost (final String postURL, final List<NameValuePair> params,
-                                final Header... headers) {
+    public HttpResponse doPost(final String postURL, final List<NameValuePair> params,
+                               final Header... headers) {
         try {
             final HttpParams httpParams = this.getHttpParams();
             final HttpClient client = new DefaultHttpClient(httpParams);
@@ -116,7 +116,7 @@ public class HttpManager {
      * @param requestBase {@link org.apache.http.client.methods.HttpRequestBase}
      * @param headers     - array of {@link org.apache.http.Header}
      */
-    private void addHeaders (final HttpRequestBase requestBase, final Header... headers) {
+    private void addHeaders(final HttpRequestBase requestBase, final Header... headers) {
         if ((headers != null) && (headers.length > 0)) {
             for (final Header header : headers) {
                 requestBase.addHeader(header);
@@ -127,7 +127,7 @@ public class HttpManager {
     /**
      * @return {@link org.apache.http.params.HttpParams} for requests
      */
-    private HttpParams getHttpParams () {
+    private HttpParams getHttpParams() {
         final HttpParams params = new BasicHttpParams();
         HttpConnectionParams.setConnectionTimeout(params, HttpManager.CONNECTION_TIMEOUT);
         HttpConnectionParams.setSoTimeout(params, HttpManager.SOCKET_TIMEOUT);

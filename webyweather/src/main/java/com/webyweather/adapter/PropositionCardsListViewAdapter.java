@@ -2,9 +2,6 @@ package com.webyweather.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +21,6 @@ import com.webyweather.constant.Constants;
 import com.webyweather.dto.Proposition;
 import com.webyweather.dto.Propositions;
 
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -52,7 +48,7 @@ public class PropositionCardsListViewAdapter extends ArrayAdapter<Propositions> 
     private int totalHeight;
 
 
-    public PropositionCardsListViewAdapter (Context context, List<Propositions> cards, ImageLoader loader) {
+    public PropositionCardsListViewAdapter(Context context, List<Propositions> cards, ImageLoader loader) {
         super(context, R.layout.proposition_card_layout, cards);
         this.cardItems = cards;
         this.context = context;
@@ -68,19 +64,19 @@ public class PropositionCardsListViewAdapter extends ArrayAdapter<Propositions> 
     }
 
     @Override
-    public int getCount () {
+    public int getCount() {
         if (cardItems != null) {
             return cardItems.size();
         }
         return 0;
     }
 
-    public int getTotalHeight () {
+    public int getTotalHeight() {
         return totalHeight;
     }
 
     @Override
-    public View getView (int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         final LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View rowView = inflater.inflate(R.layout.proposition_card_layout, parent, false);
 
@@ -104,7 +100,7 @@ public class PropositionCardsListViewAdapter extends ArrayAdapter<Propositions> 
     private static class FadeInDisplayListener extends SimpleImageLoadingListener {
 
         @Override
-        public void onLoadingComplete (String imageUri, View view, Bitmap loadedImage) {
+        public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
             if (loadedImage != null) {
                 ImageView imageView = (ImageView) view;
                 FadeInBitmapDisplayer.animate(imageView, 200);
